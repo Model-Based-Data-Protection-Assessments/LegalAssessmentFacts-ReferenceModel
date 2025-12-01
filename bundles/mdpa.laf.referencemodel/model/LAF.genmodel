@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/mdpa.laf.referencemodel/src-gen" creationIcons="false"
+    editDirectory="/mdpa.laf.referencemodel.edit/src-gen" editorDirectory="/mdpa.laf.referencemodel.editor/src-gen"
+    modelPluginID="mdpa.laf.referencemodel" modelName="LAF" editPluginClass="mdpa.laf.referencemodel.provider.LAFEditPlugin"
+    editorPluginClass="mdpa.laf.referencemodel.presentation.LAFEditorPlugin" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    suppressEMFTypes="true" reflectiveDelegation="true" codeFormatting="true" testsDirectory="/mdpa.laf.referencemodel.tests/src-gen"
+    testSuiteClass="mdpa.laf.referencemodel.tests.LAFAllTests" importerID="org.eclipse.emf.importer.ecore"
+    featureDelegation="Reflective" complianceLevel="5.0" copyrightFields="false" editPluginID="mdpa.laf.referencemodel.edit"
+    editorPluginID="mdpa.laf.referencemodel.editor" usedGenPackages="../../tools.mdsd.modelingfoundations.identifier/model/identifier.genmodel#//identifier"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>LAF.ecore</foreignModel>
+  <genPackages prefix="LAF" basePackage="mdpa.laf.referencemodel" disposableProviderFactory="true"
+      extensibleProviderFactory="true" childCreationExtenders="true" ecorePackage="LAF.ecore#/">
+    <genClasses image="false" ecoreClass="LAF.ecore#//AssessmentFact"/>
+    <genClasses ecoreClass="LAF.ecore#//LegalEntity">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LAF.ecore#//LegalEntity/relatesTo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LAF.ecore#//LegalEntity/in"/>
+    </genClasses>
+    <genClasses ecoreClass="LAF.ecore#//LegalSubject">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LAF.ecore#//LegalSubject/performs"/>
+    </genClasses>
+    <genClasses ecoreClass="LAF.ecore#//LegalObject"/>
+    <genClasses ecoreClass="LAF.ecore#//Event">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LAF.ecore#//Event/onWith"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LAF.ecore#//Event/in"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LAF.ecore#//Event/following"/>
+    </genClasses>
+    <genClasses ecoreClass="LAF.ecore#//Action"/>
+    <genClasses ecoreClass="LAF.ecore#//LegalContext">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LAF.ecore#//LegalContext/relatesTo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

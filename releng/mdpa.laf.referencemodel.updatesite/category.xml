@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="mdpa.laf.referencemodel.feature">
+      <category name="laf_referencemodel"/>
+   </feature>
+   <feature id="mdpa.laf.referencemodel.contextproperties.feature">
+      <category name="laf_referencemodel"/>
+   </feature>
+   <feature id="mdpa.laf.referencemodel.api.feature">
+      <category name="laf_referencemodel"/>
+   </feature>
+   <category-def name="laf_referencemodel" label="LAF Referencemodel"/>
+</site>

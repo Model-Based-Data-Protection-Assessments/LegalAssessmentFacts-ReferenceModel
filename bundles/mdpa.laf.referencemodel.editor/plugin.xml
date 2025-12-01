@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated GDPR -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="mdpa.laf.referencemodel.LAF.presentation.LAFModelWizardID"
+            name="%_UI_GDPRModelWizard_label"
+            class="mdpa.laf.referencemodel.LAF.presentation.LAFModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GDPRModelFile.gif">
+         <description>%_UI_LAFModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated GDPR -->
+      <editor
+            id="mdpa.laf.referencemodel.LAF.presentation.LAFEditorID"
+            name="%_UI_LAFEditor_label"
+            icon="icons/full/obj16/GDPRModelFile.gif"
+            extensions="laf"
+            class="mdpa.laf.referencemodel.LAF.presentation.LAFEditor"
+            contributorClass="mdpa.laf.referencemodel.LAF.presentation.LAFActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
