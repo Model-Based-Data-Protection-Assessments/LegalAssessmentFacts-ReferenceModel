@@ -1,1 +1,1 @@
-# GDPR-Metamodel
+# LAF Referenzmodel
